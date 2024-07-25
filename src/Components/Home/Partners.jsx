@@ -14,7 +14,7 @@ const Partners = () => {
   const Xtranslation=useMotionValue(0)
 
   const Fast_duration=23
-  const Slow_duration=75
+  const Slow_duration=37
   const [duration,setDUration]=useState(Fast_duration)
   const [mustFInish,setMustFInish]=useState(false)
   const [rerender,setReRender]=useState(false)
