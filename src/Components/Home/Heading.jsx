@@ -5,7 +5,7 @@ import Paragraph from "./Paragraph"
 const Heading = () => {
   
   return (
-    <div className="w-[1018px] text-center mt-[120px]">
+    <div className="w-[1018px] text-center mt-[147px]">
       <div className="flex flex-col gap-[32px] ">
 
             <div className="flex flex-col gap-[12px] "> 

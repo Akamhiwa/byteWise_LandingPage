@@ -4,7 +4,7 @@ import Partners from "../Components/Home/Partners"
 
 const Home = () => {
   return (
-    <div className=" text-center overflow-hidden ">
+    <div className=" text-center overflow-hidden h-[20000px]">
       <div className="flex flex-col items-center justify-center">
       <Heading />
       <HeadingImage />

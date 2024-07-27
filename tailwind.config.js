@@ -22,7 +22,7 @@ export default {
         Border_Color: "linear-gradient(to bottom, #F4F4F5, rgba(142, 142, 143, 0))",
       },
        boxShadow: {
-        'glow': '0 0 5px #429AF8, 0 0 5px #429AF8, 0 0 15px #429AF8, 0 0 15px #429AF8', // Custom glow shadow
+        'glow': '0 0 5px #429AF8, 0 0 5px #429AF8, 0 0 5px #429AF8, 0 0 5px #429AF8', // Custom glow shadow
       },
      
     },

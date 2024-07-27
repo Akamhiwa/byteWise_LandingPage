@@ -28,8 +28,11 @@ const Languages = () => {
   return (
     <div className="relative">
          <div 
-         className=" w-[143px] rounded-full cursor-pointer h-[37px] flex items-center justify-center bg-GradientBG bg-opacity-25 gradient-border"
-         onClick={()=>handleDropDown()}>
+         className=" w-[143px] rounded-full cursor-pointer h-[37px] flex items-center justify-center  gradient-border"
+         onClick={()=>handleDropDown()}
+         style={{
+            background: 'linear-gradient(to bottom, rgba(21, 29, 44, 25), rgba(11, 16, 24, 25))'
+          }}>
           <div className=" tracking-wide text-[16px] ">{value}</div>
             <div className="">
             <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" >
