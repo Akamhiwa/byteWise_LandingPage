@@ -15,7 +15,7 @@ const Heading = () => {
                        <GradientText Title='Unleashing the Power of Technology'/>
                        <Paragraph Text=' Explore a wide range of cutting-edge technology products, from the latest gadgets to essential accessories. 
                                           Bytewise is committed to bringing you the best in tech, with unbeatable prices and unparalleled customer service. 
-                                          Join us and experience the future of shopping today.'/>
+                                          Join us and experience the future of shopping today.' isCentered={true}/>
                   </div>
             </div>
      

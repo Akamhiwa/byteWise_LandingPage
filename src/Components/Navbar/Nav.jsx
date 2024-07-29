@@ -5,7 +5,7 @@ import Languages from "./Languages"
 const Nav = () => {
   return (
     <div className={`px-[220px] h-[95px] fixed inset-0 z-30 backdrop-blur-md`}
-    style={{
+    style={{ 
       background: 'linear-gradient(to bottom, rgba(21, 29, 44, 0.25), rgba(11, 16, 24, 0.25))'
     }}>
          <div className="flex items-center h-full justify-between ">

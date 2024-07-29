@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 
-const Paragraph = ({Text}) => {
+const Paragraph = ({Text,isCentered}) => {
   return (
-    <p className="text-[20px] font-light   leading-snug text-center capitalize">
+    <p className={`text-[20px] font-light   leading-snug  ${isCentered && 'text-center '} capitalize`}>
    {Text}
 </p>
   )

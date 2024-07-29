@@ -17,7 +17,7 @@ const HeadingImage = () => {
     SetACtiveImage((prev) => (prev <= 1 ? images.length : prev - 1))
   }
   return (
-    <div className="my-[83px] w-full px-[220px]">
+    <div className="my-[83px] w-full ">
         <div className="relative w-full ">
             <div className="bg-cover h-[800px]  bg-center relative rounded-[16px]" 
               style={{ 
