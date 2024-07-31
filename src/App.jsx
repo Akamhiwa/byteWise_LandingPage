@@ -7,7 +7,7 @@ import Shape from './Components/BlurShape/Shape'
 import Nav from "./Components/Navbar/Nav"
 const App = () => {
   return (
-    <div className="text-textColor font-Primary_Font ">
+    <div className="text-textColor font-Primary_Font relative ">
       <Nav />
       <Shape />
       <div>

@@ -22,7 +22,7 @@ body{
 }
 
   .gradient-border {
-    position: relative;
+    position: relative;    
     border-radius: 16px; /* Adjust as needed */
   }
   

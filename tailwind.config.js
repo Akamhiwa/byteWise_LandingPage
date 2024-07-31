@@ -16,7 +16,7 @@ export default {
       },
       backgroundImage: {
         GradientBG: "linear-gradient(to bottom, #151D2C, #0B1018)",
-        OpacityBg: 'rgba(244, 244, 245, 0.1)',
+        SectionBg:'linear-gradient(to bottom ,#0B1018,#03060C)'
        
       },
       borderColor:{

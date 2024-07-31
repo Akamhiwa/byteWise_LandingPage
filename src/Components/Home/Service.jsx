@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import Paragraph from "./Paragraph"
+import Paragraph from "../TextUi/Paragraph"
 import { useAnimation } from "framer-motion";
 import { motion } from "framer-motion";
+import SubTitle from "../TextUi/SubTitle";
 // eslint-disable-next-line react/prop-types
 const Service = ({service}) => {
     //custom hook
@@ -26,8 +27,8 @@ const Service = ({service}) => {
   };
   return (
     <div
-      className={`gradient-border ${service.isSpan ? 'col-span-2':'col-span-1'} border-1 bg-GradientBG min-h-full h-[332px]  
-       rounded-[16px] text-left relative `}
+      className={`gradient-border ${service.isSpan ? 'col-span-2':'col-span-1'} bg-GradientBG min-h-full h-[332px]  
+       rounded-[16px] text-left  `}
        onMouseMove={handleMouseMove}
        onMouseEnter={handleMouseEnter}
        onMouseLeave={handleMouseLeave}
@@ -38,18 +39,20 @@ const Service = ({service}) => {
         animate={controls}
         initial={{ opacity: 0 }}
         style={{
-          background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(21, 29, 44, 0.5), transparent 50%)`,
+          background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(21, 29, 44, 0.7), transparent 70%)`,
         }}
       ></motion.div>
             <div className="flex flex-col h-full items-start justify-between ">  
             <span 
-                className="text-[61px] font-semibold z-10 tracking-wide" 
-                style={{ WebkitTextStroke: '1px #ffffff', color: 'transparent' }}>{service.ServiceNumber}
+                className="text-[61px] font-semibold z-10 tracking-wider" 
+                style={{ WebkitTextStroke: '1px #F4F4F5', color: 'transparent' }}>{service.ServiceNumber}
             </span>
             <div className="flex flex-col  w-[100%] gap-[4px]  ">
-                <h1 className={`text-[24px] font-semibold z-10 capitalize leading-snug tracking-wide ${service.isSpan ? 'w-[100%]':'w-[100%]'}`}>{service.ServiceTItle}</h1>
-                <span className={`${service.isSpan ? 'w-[60%]':'w-[80%]'} z-10`}>
-                <Paragraph Text={service.ServiceDetail} isCentered={false}  />
+              <span className={`${service.isSpan ? 'w-[100%]':'w-[80%]'} z-10`}>
+                <SubTitle>{service.ServiceTItle}</SubTitle>
+              </span>
+                <span className={`${service.isSpan ? 'w-[60%]':'w-[90%]'} z-10`}>
+                <Paragraph isCentered={false}>{service.ServiceDetail}</Paragraph>
                 </span>
                 </div>
             </div>

@@ -1,13 +1,13 @@
-import Paragraph from "../Home/Paragraph"
+import MediumHeading from "../TextUi/MediumHeading"
+import Paragraph from "../TextUi/Paragraph"
 
 // eslint-disable-next-line react/prop-types
 const SectionTitle = ({title,padding,children}) => {
   return (
     <div className={`${padding}`}>
         <div>
-              <h1 className="text-[41px] font-bold tracking-wide">{title}</h1>
-              <Paragraph Text='Bytewise offers a comprehensive range of services to enhance your tech shopping experience. From expert product 
-          recommendations and competitive pricing to fast shipping and reliable tech support.'  isCentered={true}/>
+              <MediumHeading>{title}</MediumHeading>
+              <Paragraph isCentered={true}>Hear what our customers have to say about their Bytewise experience.</Paragraph>
         </div>
         {children}
         

@@ -1,5 +1,6 @@
-import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
+
+import SecondaryBtn from "../Buttons/SecondaryBtn";
+import PrimaryBtn from "../Buttons/PrimaryBtn";
 
 const HeadingButton = () => {
   const buttonVariants = {
@@ -18,33 +19,8 @@ const HeadingButton = () => {
 
   return (
     <div className="flex items-center justify-center gap-[44px]">
-      <motion.div
-        whileHover="hover"
-        whileTap="tap"
-        variants={buttonVariants}
-      >
-        <NavLink
-          to={"/Product"}
-          className="py-[14px] px-[60px] bg-Primary text-[16px] tracking-widest uppercase rounded-[16px] font-bold shadow-glow hover:shadow-none"
-        >
-          Products
-        </NavLink>
-      </motion.div>
-      <motion.div
-        whileHover="hover"
-        whileTap="tap"
-        variants={buttonVariants}
-      >
-        <NavLink
-          to={"/About"}
-          className="py-[14px] px-[60px] text-[16px] uppercase tracking-widste rounded-[16px] font-bold gradient-border"
-          style={{
-            background: 'linear-gradient(to bottom, rgba(21, 29, 44, 25), rgba(11, 16, 24, 25))'
-          }}
-        >
-          About Us
-        </NavLink>
-      </motion.div>
+      <PrimaryBtn variants={buttonVariants} UrlPage="/Product">Products</PrimaryBtn>
+     <SecondaryBtn variants={buttonVariants} UrlPage="/About">About Us</SecondaryBtn>
     </div>
   );
 };
