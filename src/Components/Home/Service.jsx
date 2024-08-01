@@ -4,6 +4,7 @@ import Paragraph from "../TextUi/Paragraph"
 import { useAnimation } from "framer-motion";
 import { motion } from "framer-motion";
 import SubTitle from "../TextUi/SubTitle";
+import { Icon } from "@iconify/react/dist/iconify.js";
 // eslint-disable-next-line react/prop-types
 const Service = ({service}) => {
     //custom hook
@@ -57,7 +58,7 @@ const Service = ({service}) => {
                 </div>
             </div>
                 <div className="w-[142px] h-[142px] absolute -top-8 -right-8  bg-[#fff3] rounded-full flex items-center justify-start pl-10">
-                  {service.icon}
+                  <Icon icon={service.icon.name} width={service.icon.width} height={service.icon.height} />
                 </div>
         </div>
       

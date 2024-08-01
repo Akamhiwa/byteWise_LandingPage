@@ -1,15 +1,15 @@
 import MediumHeading from '../TextUi/MediumHeading';
 import Paragraph from '../TextUi/Paragraph'
-const statsData = [
-  [{ value: '500,000+', label: 'Satisfied Customers' }],
-  [
-    { value: '1,000,000+', label: 'Products Sold' },
-    { value: '99%', label: 'Customer Satisfaction' }
-  ],
-  [{ value: '10,000+', label: 'Total Users' }]
-];
-
 const Stats = () => {
+   const statsData = [
+    [{ value: '500,000+', label: 'Satisfied Customers' }],
+    [
+      { value: '1,000,000+', label: 'Products Sold' },
+      { value: '99%', label: 'Customer Satisfaction' }
+    ],
+    [{ value: '10,000+', label: 'Total Users' }]
+  ];
+  
   return (
     <div className='flex flex-col items-center  space-y-4 overflow-visible gradient-border'>
       {statsData.map((row, rowIndex) => (
@@ -34,7 +34,7 @@ const Stats = () => {
 export default Stats;
 
 
-
+//using grid
 // import Paragraph from "./Paragraph";
 
 // function Stats() {

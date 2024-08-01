@@ -1,7 +1,8 @@
 // import { motion } from "framer-motion"
 import BigHeading from "../TextUi/BigHeading"
-import HeadingButton from "./HeadingButton"
 import Paragraph from "../TextUi/Paragraph"
+import PrimaryBtn from "../Buttons/PrimaryBtn"
+import SecondaryBtn from "../Buttons/SecondaryBtn"
 const Heading = () => {
   
   return (
@@ -18,8 +19,10 @@ const Heading = () => {
                                           Join us and experience the future of shopping today.</Paragraph>
                   </div>
             </div>
-     
-          <HeadingButton />
+            <div className="flex items-center justify-center gap-[44px]">
+              <PrimaryBtn  UrlPage="/Product">Products</PrimaryBtn>
+             <SecondaryBtn  UrlPage="/About">About Us</SecondaryBtn>
+             </div>
         </div>
     </div>
   )
