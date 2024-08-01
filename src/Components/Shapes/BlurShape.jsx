@@ -1,6 +1,4 @@
-
-
-const Shape = () => {
+const BlurShape = () => {
   return (
     <div className="flex justify-center ">
           <div className=" h-[742px] w-[743px] bg-[#429AF8] rounded-full filter mix-blend-screen  blur-3xl  opacity-10 absolute -top-[492px]">  </div>
@@ -8,4 +6,4 @@ const Shape = () => {
   )
 }
 
-export default Shape
+export default BlurShape

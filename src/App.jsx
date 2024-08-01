@@ -3,13 +3,13 @@ import Home from "./Pages/Home"
 import Product from "./Pages/Product"
 import About from "./Pages/About"
 import Contact from "./Pages/Contact"
-import Shape from './Components/BlurShape/Shape'
+import BlurShape from './Components/Shapes/BlurShape'
 import Nav from "./Components/Navbar/Nav"
 const App = () => {
   return (
     <div className="text-textColor font-Primary_Font relative ">
       <Nav />
-      <Shape />
+      <BlurShape />
       <div>
         <Routes>
           <Route path="/" index element={<Home />}></Route>

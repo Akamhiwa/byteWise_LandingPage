@@ -4,7 +4,7 @@ import Heading from "../Components/Home/Heading"
 import HeadingImage from "../Components/Home/HeadingImage"
 import Partners from "../Components/Home/Partners"
 import ServicesContainer from "../Components/Home/ServicesContainer"
-import Stats from "../Components/Home/Stats"
+import StatsSection from "../Components/Home/StatsSection"
 import StatsContainer from "../Components/Home/StatsContainer"
 import StatsTitle from "../Components/Home/StatsTitle"
 import TestimonialContainer from "../Components/Home/TestimonialContainer"
@@ -22,10 +22,10 @@ const Home = () => {
           <ServicesContainer />
       </SectionTitle>
       
-      <StatsContainer>
-          <Stats />
+      <StatsSection>
+          <StatsContainer />
           <StatsTitle />
-      </StatsContainer >
+      </StatsSection >
 
       <SectionTitle 
           title="TESTIMONIAL" padding="pt-[49px]" >

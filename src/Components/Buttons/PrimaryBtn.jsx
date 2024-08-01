@@ -9,10 +9,11 @@ const PrimaryBtn = ({UrlPage,children}) => {
     whileHover="hover"
     whileTap="tap"
     variants={buttonVariants}
+    className="z-10"
   >
     <NavLink
       to={UrlPage}
-      className="py-[14px] px-[60px] bg-Primary text-[16px] tracking-widest uppercase rounded-[16px] font-bold hover:shadow-glow"
+      className="py-[14px] px-[60px]  bg-Primary text-[16px] tracking-widest uppercase rounded-[16px] font-bold hover:shadow-glow"
     >
       {children}
     </NavLink>
