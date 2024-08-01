@@ -4,17 +4,29 @@ import SubTitle from "../TextUi/SubTitle";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import useMouseEffect from "../../Hooks/useMouseEffect";
 import MouseEffectShape from "../Shapes/MouseEffectShape";
+import { motion } from "framer-motion";
+import useScrollAnimationVariants from "../../Hooks/useScrollAnimationVariants";
 const Service = ({service}) => { 
-    const { mousePosition, controls, handleMouseMove, handleMouseEnter, handleMouseLeave } = useMouseEffect();
+  const { mousePosition, controls, handleMouseMove, handleMouseEnter, handleMouseLeave } = useMouseEffect();
+  const variants = useScrollAnimationVariants(80, 0, 0.5);
   return (
+    <motion.div 
+      className={`relative inline-block p-[2px] ${service.isSpan ? 'col-span-2':'col-span-1'} rounded-[16px] bg-gradient-to-b
+       from-[rgba(244,244,245,0.4)] to-[rgba(142,142,143,0)] bg-clip-padding border border-transparent`}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }}
+      variants={variants}
+      >
     <div
-      className={`gradient-border ${service.isSpan ? 'col-span-2':'col-span-1'} bg-GradientBG min-h-full h-[332px]  
+      className={`relative  bg-GradientBG min-h-full h-[332px]  
        rounded-[16px] text-left  `}
        onMouseMove={handleMouseMove}
        onMouseEnter={handleMouseEnter}
        onMouseLeave={handleMouseLeave}
+      
        >
-        <div className="w-full h-full px-[32px] pt-[8px] pb-[32px] rounded-[16px] relative overflow-hidden">
+        <div className="w-full h-full px-[32px] pt-[8px] pb-[32px] rounded-[16px] z-30 relative overflow-hidden">
        <MouseEffectShape controls={controls} mousePosition={mousePosition} />
             <div className="flex flex-col h-full items-start justify-between ">  
             <span 
@@ -36,6 +48,7 @@ const Service = ({service}) => {
         </div>
       
       </div>
+      </motion.div>
   )
 }
 

@@ -1,13 +1,22 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 import { NavLink } from "react-router-dom"
 import Languages from "./Languages"
-
+import useScrollAnimationVariants from "../../Hooks/useScrollAnimationVariants";
+import { motion } from "framer-motion";
 const Nav = () => {
+  const variants = useScrollAnimationVariants(0, -80, 0.5);
+
   return (
-    <div className={`px-[220px] h-[95px] fixed inset-0 z-30 backdrop-blur-md`}
+    <motion.div 
+    className={`px-[220px] h-[95px] fixed inset-0 z-30 backdrop-blur-md`}
     style={{ 
       background: 'linear-gradient(to bottom, rgba(21, 29, 44, 0.25), rgba(11, 16, 24, 0.25))'
-    }}>
+    }}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: false }}
+    variants={variants}
+    >
          <div className="flex items-center h-full justify-between ">
         <NavLink to={'/Home'} className={' uppercase tracking-widest text-[31px] font-semibold '}>ByteWIse</NavLink>
         <ul className=" flex items-center justify-center gap-[32px] ">
@@ -20,7 +29,7 @@ const Nav = () => {
           <Languages />
         </div>
     </div>
-    </div>
+    </motion.div>
     
      
   )

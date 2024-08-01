@@ -3,12 +3,18 @@ import BigHeading from "../TextUi/BigHeading"
 import Paragraph from "../TextUi/Paragraph"
 import PrimaryBtn from "../Buttons/PrimaryBtn"
 import SecondaryBtn from "../Buttons/SecondaryBtn"
+import { motion } from "framer-motion"
+import useScrollAnimationVariants from "../../Hooks/useScrollAnimationVariants"
 const Heading = () => {
-  
+  const variants = useScrollAnimationVariants(0, 80, 0.5);
   return (
-    <div className="w-[1018px] text-center mt-[147px]">
-      <div className="flex flex-col gap-[32px] ">
-
+    <motion.div className="w-[1018px] text-center mt-[147px] pb-6 "
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: false }}
+    variants={variants}
+    >
+      <div className="flex flex-col gap-[32px]  ">
             <div className="flex flex-col gap-[12px] "> 
                 <span className="text-[31px] uppercase tracking-widest">Bytewise</span>
 
@@ -24,7 +30,7 @@ const Heading = () => {
              <SecondaryBtn  UrlPage="/About">About Us</SecondaryBtn>
              </div>
         </div>
-    </div>
+    </motion.div >
   )
 }
 

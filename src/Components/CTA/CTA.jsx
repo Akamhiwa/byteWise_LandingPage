@@ -5,13 +5,22 @@ import Paragraph from "../TextUi/Paragraph"
 import PrimaryBtn from "../Buttons/PrimaryBtn"
 import useMouseEffect from "../../Hooks/useMouseEffect"
 import MouseEffectShape from "../Shapes/MouseEffectShape"
+import useScrollAnimationVariants from "../../Hooks/useScrollAnimationVariants"
+import { motion } from "framer-motion"
 const CTA = () => {
   const { mousePosition, controls, handleMouseMove, handleMouseEnter, handleMouseLeave } = useMouseEffect();
+  const variants = useScrollAnimationVariants(0, 80, 0.5);
   return (
     <div className="w-full py-[200px] ">
-      <div className="w-full  gradient-border  ">
+      <motion.div className="w-full relative inline-block p-[2px] rounded-[16px] bg-gradient-to-b from-[rgba(244,244,245,0.4)] 
+          o-[rgba(142,142,143,0)] bg-clip-padding border border-transparent m-2 "
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false }}
+          variants={variants}
+          >
       <div 
-       className="w-full bg-GradientBG  overflow-hidden relative  py-[100px] px-[300px]    rounded-[16px] "  
+       className="w-full bg-GradientBG  overflow-hidden relative  py-[100px] px-[300px]  rounded-[16px] "  
        onMouseMove={handleMouseMove}
        onMouseEnter={handleMouseEnter}
        onMouseLeave={handleMouseLeave}
@@ -26,8 +35,8 @@ const CTA = () => {
             <PrimaryBtn UrlPage="/Contact" >Contact us</PrimaryBtn>     
         </div>
         </div>
+    </motion.div>
       </div>
-    </div>
   )
 }
 

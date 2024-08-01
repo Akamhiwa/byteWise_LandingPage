@@ -5,19 +5,26 @@ import Team from '../../../public/images/team.png'
 import SliderIndicator from './SliderIndicator'
 import ImageOverlay from './ImageOverlay'
 import SliderBtn from '../Buttons/SliderBtn'
+import { motion } from 'framer-motion'
+import useScrollAnimationVariants from '../../Hooks/useScrollAnimationVariants'
 const HeadingImage = () => {
   const [ActiveImage,SetACtiveImage]=useState(1)
   const images=[bytewiseImage,TechStore,Team]
-
+  
   const handleIncrement = () => {
     SetACtiveImage((prev) => (prev >= images.length ? 1 : prev + 1))
   }
-
+  
   const handleDecrement = () => {
     SetACtiveImage((prev) => (prev <= 1 ? images.length : prev - 1))
   }
+
+  const variants = useScrollAnimationVariants(-80, 0, 0.5);
   return (
-    <div className="my-[83px] w-full ">
+    <motion.div className="my-[83px] w-full "  initial="hidden"
+    whileInView="visible"
+    viewport={{ once: false }}
+    variants={variants}>
         <div className="relative w-full ">
             <div className="bg-cover h-[800px]  bg-center relative rounded-[16px]" 
               style={{ 
@@ -43,7 +50,7 @@ const HeadingImage = () => {
 
         </div>
 
-    </div>
+    </motion.div>
   )
 }
 
