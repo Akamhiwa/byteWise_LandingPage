@@ -27,8 +27,10 @@ const Languages = () => {
     }
   return (
     <div className="relative">
+        <div   className="relative inline-block p-[1px] rounded-[16px] bg-gradient-to-b from-[rgba(244,244,245,0.4)] to-[rgba(142,142,143,0)]
+              bg-clip-padding border border-transparent">
          <div 
-         className=" w-[143px] rounded-full cursor-pointer h-[37px] flex items-center justify-center  gradient-border"
+         className=" md:w-[143px] w-[100px] rounded-[16px] cursor-pointer  h-[37px] flex items-center justify-center  "
          onClick={()=>handleDropDown()}
          style={{
             background: 'linear-gradient(to bottom, rgba(21, 29, 44, 25), rgba(11, 16, 24, 25))'
@@ -40,6 +42,7 @@ const Languages = () => {
                   </svg>
             </div>
           </div> 
+          </div>
           {isOpen &&(
            <DropDown Languages={Languages} handleValue={handleValue}/>
           )}

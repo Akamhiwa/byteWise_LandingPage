@@ -5,13 +5,10 @@ import MouseEffectShape from "../Shapes/MouseEffectShape";
 const Partner = ({icon}) => {
   const { mousePosition, controls, handleMouseMove, handleMouseEnter, handleMouseLeave } = useMouseEffect();
   return (
-    <div 
-     
-      className="relative inline-block p-[2px] rounded-[16px] bg-gradient-to-b from-[rgba(244,244,245,0.4)] to-[rgba(142,142,143,0)]
-       bg-clip-padding border border-transparent">
-        
-      <div
-        className="relative bg-GradientBG text-white rounded-[16px] flex items-center justify-center gap-[44px] px-[62px] py-[17px]"
+    <div  className="relative inline-block lg:p-[1px] p-[1px]  rounded-[16px] bg-gradient-to-b from-[rgba(244,244,245,0.4)] to-[rgba(142,142,143,0)]
+           bg-clip-padding border border-transparent">  
+      <div className="relative bg-GradientBG text-textColor rounded-[16px]
+            flex items-center justify-center lg:px-[62px] lg:py-[17px] px-[43px] py-[12px]"
         onMouseMove={handleMouseMove}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}  

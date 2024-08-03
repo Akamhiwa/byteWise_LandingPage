@@ -13,13 +13,13 @@ const StatsContainer = () => {
   ];
   
   return (
-    <div className='flex flex-col items-center  space-y-4 overflow-visible gradient-border'>
+    <div className='flex flex-col items-center lg:w-full w-full  lg:space-y-2  gradient-border'>
       {statsData.map((row, rowIndex) => (
         <div 
         key={rowIndex} 
-        className={`flex items-center overflow-visible p-2 z-10  gap-x-[44px] ${row.length === 1 ? 'justify-center w-full' : 'justify-between w-full '}  
-         ${rowIndex===0 && 'pl-[160px]' }
-         ${rowIndex===2 && 'pr-[160px]' }  `}>
+        className={`flex items-center   z-10  lg:gap-x-[22px] w-full  ${row.length === 1 ? 'justify-center ' : 'justify-between  '}  
+         ${rowIndex===0 && 'lg:pl-[200px] pl-[100px]' }
+         ${rowIndex===2 && 'lg:pr-[200px] pr-[100px]' } `}>
           
           {row.map((stat, index) => (
             <Stats stats={stat} key={index} />

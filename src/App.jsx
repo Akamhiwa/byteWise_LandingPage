@@ -7,7 +7,7 @@ import BlurShape from './Components/Shapes/BlurShape'
 import Nav from "./Components/Navbar/Nav"
 const App = () => {
   return (
-    <div className="text-textColor font-Primary_Font relative ">
+    <div className="text-textColor font-Primary_Font overflow-hidden relative ">
       <Nav />
       <BlurShape />
       <div>

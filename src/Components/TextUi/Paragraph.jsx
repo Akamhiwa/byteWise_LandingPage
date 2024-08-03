@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 
-const Paragraph = ({isCentered,children}) => {
+const Paragraph = ({children}) => {
   return (
-    <p className={`text-[20px] font-light tracking-wider z-10  leading-snug  ${isCentered ? 'text-center ':'text-left'} capitalize`}>
+    <p className={`lg:text-[20px] md:text-[18px] text-[16px] font-light tracking-wider z-10  leading-snug   capitalize`}>
    {children}
    </p>
   )

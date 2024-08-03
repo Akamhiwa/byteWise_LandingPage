@@ -12,25 +12,22 @@ import SectionTitle from "../Components/sectionTitle/SectionTitle"
 
 const Home = () => {
   return (
-    <div className=" text-center overflow-hidden  px-[220px]">
+    <div className=" text-center overflow-hidden  2xl:px-[220px] xl:px-[180px] lg:px-[100px] md:px-[30px] px-[20px]  ">
       <div className="flex flex-col items-center justify-center">
       <Heading />
       <HeadingImage />
-      <Partners /> 
-      <SectionTitle 
-          title="Services" padding="pt-[137px]" >
-          <ServicesContainer />
-      </SectionTitle>
+      <Partners />
+       
+      <SectionTitle  title="Services" padding="pt-[137px]" />
+      <ServicesContainer />
       
       <StatsSection>
           <StatsContainer />
           <StatsTitle />
       </StatsSection >
 
-      <SectionTitle 
-          title="TESTIMONIAL" padding="pt-[49px]" >
-          <TestimonialContainer />
-      </SectionTitle>
+      <SectionTitle title="TESTIMONIAL" padding="lg:pt-[49px]" />
+      <TestimonialContainer />
       <CTA />
       <Footer />
 

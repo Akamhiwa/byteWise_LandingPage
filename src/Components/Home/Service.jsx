@@ -11,7 +11,7 @@ const Service = ({service}) => {
   const variants = useScrollAnimationVariants(80, 0, 0.5);
   return (
     <motion.div 
-      className={`relative inline-block p-[2px] ${service.isSpan ? 'col-span-2':'col-span-1'} rounded-[16px] bg-gradient-to-b
+      className={`relative inline-block p-[1px] ${service.isSpan ? 'col-span-2':'col-span-1'} rounded-[16px] bg-gradient-to-b
        from-[rgba(244,244,245,0.4)] to-[rgba(142,142,143,0)] bg-clip-padding border border-transparent`}
       initial="hidden"
       whileInView="visible"
@@ -37,8 +37,8 @@ const Service = ({service}) => {
               <span className={`${service.isSpan ? 'w-[100%]':'w-[80%]'} z-10`}>
                 <SubTitle>{service.ServiceTItle}</SubTitle>
               </span>
-                <span className={`${service.isSpan ? 'w-[60%]':'w-[90%]'} z-10`}>
-                <Paragraph isCentered={false}>{service.ServiceDetail}</Paragraph>
+                <span className={`${service.isSpan ? 'lg:w-[60%]':'lg:w-[90%]'} z-10 w-full`}>
+                <Paragraph>{service.ServiceDetail}</Paragraph>
                 </span>
                 </div>
             </div>

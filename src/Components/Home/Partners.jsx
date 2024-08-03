@@ -15,7 +15,7 @@ const Partners = () => {
       <motion.div
         onHoverStart={handleHoverStart}
         onHoverEnd={handleHoverEnd}
-        className="flex gap-[44px]"
+        className="flex lg:gap-[44px] gap-[24px]"
         ref={ref}
         style={style}
       >

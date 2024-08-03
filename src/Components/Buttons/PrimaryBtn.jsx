@@ -13,7 +13,8 @@ const PrimaryBtn = ({UrlPage,children}) => {
   >
     <NavLink
       to={UrlPage}
-      className="py-[14px] px-[60px]  bg-Primary text-[16px] tracking-widest uppercase rounded-[16px] font-bold hover:shadow-glow"
+      className="py-[14px] md:px-[60px] px-[42px]   bg-Primary lg:text-[16px] text-[14px]
+       tracking-widest uppercase rounded-[16px] font-bold hover:shadow-glow"
     >
       {children}
     </NavLink>

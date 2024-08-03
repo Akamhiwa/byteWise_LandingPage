@@ -7,27 +7,30 @@ import SubTitle from "../TextUi/SubTitle"
 const Testimonial = ({testimonial}) => {
   const { mousePosition, controls, handleMouseMove, handleMouseEnter, handleMouseLeave } = useMouseEffect();
   return (
-    <div className="relative inline-block p-[2px] rounded-[16px] bg-gradient-to-b from-[rgba(244,244,245,0.4)] 
+    <div className=" inline-block p-[1px] rounded-[16px] bg-gradient-to-b from-[rgba(244,244,245,0.4)] 
     to-[rgba(142,142,143,0)] bg-clip-padding border border-transparent">
         <div 
-          className="bg-GradientBG relative gradient-border px-[42px] pt-[32px] pb-[64px] rounded-[16px]  flex flex-col gap-[32px]  min-w-[636px] text-left"
+          className="relative bg-GradientBG lg:px-[42px] md:px-[34px] px-[22px] lg:pt-[32px] 
+                     md:pt-[24px] pt-[16px] lg:pb-[64px] md:pb-[44px] pb-[32px] rounded-[16px]  flex flex-col lg:gap-[32px] gap-[18px]  lg:w-[636px] md:w-[450px] w-[400px] text-left"
           onMouseMove={handleMouseMove}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
          >
           <MouseEffectShape controls={controls} mousePosition={mousePosition} />
-            <div className="flex gap-[24px] items-start justify-start">
+            <div className="flex gap-[24px] lg:items-start items-center  lg:justify-start">
                 <span className="h-[65px] w-[65px] z-10  bg-center rounded-full bg-cover grayscale"    
                 style={{ 
                 backgroundImage: `url(${testimonial.imagePath})`,
               }}> </span>
                 <div className="flex flex-col  ">
                     <SubTitle>{testimonial.name}</SubTitle>
-                    <Paragraph isCentered={false}>{testimonial.Position}</Paragraph>
+                    <Paragraph>{testimonial.Position}</Paragraph>
 
                 </div>
             </div>
-            <Paragraph isCentered={false} >{testimonial.Qoute}</Paragraph>
+
+               <Paragraph >{testimonial.Qoute}</Paragraph>
+            
 
         </div>
 

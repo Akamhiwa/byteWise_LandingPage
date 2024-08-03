@@ -39,7 +39,7 @@ const ServicesContainer = () => {
 ]
   return (
     <div className="mt-[66px]  ">
-        <div className="grid grid-rows-2 grid-cols-3  gap-x-[44px] gap-y-[32px] ">
+        <div className="lg:grid flex flex-col lg:grid-rows-2 lg:grid-cols-3 grid-col-1  lg:gap-x-[44px]  lg:gap-y-[32px] gap-y-[16px] ">
           {
             ServicesData.map((service,index)=>(
               <Service service={service} key={index} />

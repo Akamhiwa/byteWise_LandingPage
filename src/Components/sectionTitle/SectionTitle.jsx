@@ -7,7 +7,7 @@ const SectionTitle = ({title,padding,children}) => {
   const variants = useScrollAnimationVariants(0, 60, 0.5);
 
   return (
-    <div className={`${padding}`}>
+    <div className={`${padding} w-full`}>
         <motion.div 
           initial="hidden"
           whileInView="visible"
