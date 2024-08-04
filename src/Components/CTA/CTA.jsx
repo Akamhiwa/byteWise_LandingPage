@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import BigHeading from "../TextUi/BigHeading"
 import BlurShape from "../Shapes/BlurShape"
 import Paragraph from "../TextUi/Paragraph"
 import PrimaryBtn from "../Buttons/PrimaryBtn"
@@ -7,6 +6,7 @@ import useMouseEffect from "../../Hooks/useMouseEffect"
 import MouseEffectShape from "../Shapes/MouseEffectShape"
 import useScrollAnimationVariants from "../../Hooks/useScrollAnimationVariants"
 import { motion } from "framer-motion"
+import BigHeadingAnimate from "../TextUi/BigHeadingAnimate"
 const CTA = () => {
   const { mousePosition, controls, handleMouseMove, handleMouseEnter, handleMouseLeave } = useMouseEffect();
   const variants = useScrollAnimationVariants(0, 80, 0.5);
@@ -29,7 +29,7 @@ const CTA = () => {
         <BlurShape />
         <div className="w-full flex items-center justify-center h-full flex-col lg:gap-[48px] gap-[28px] z-10">
           <div className="flex flex-col lg:gap-[24px] gap-[14px] z-10 2xl:w-[65%] md:w-[85%] w-[100%]">
-            <BigHeading>Have a Question or Need Assistance?</BigHeading>
+            <BigHeadingAnimate>Have a Question or Need Assistance?</BigHeadingAnimate>
             <Paragraph>Reach out to our team for expert advice, product inquiries, or any assistance you need. We're here to help!</Paragraph>
            </div>
             <PrimaryBtn UrlPage="/Contact" >Contact us</PrimaryBtn>     
