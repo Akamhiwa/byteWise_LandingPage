@@ -3,7 +3,7 @@ import MediumHeading from "../TextUi/MediumHeading"
 import Paragraph from "../TextUi/Paragraph"
 import { motion } from "framer-motion";
 const Footer = () => {
-  const variants = useScrollAnimationVariants(0, 80, 0.5);
+  const variants = useScrollAnimationVariants(0, 80, 0.6);
   return (
     <motion.div 
       className="flex justify-between items-center bg-GradientBG w-screen 2xl:px-[220px] xl:px-[200px] lg:px-[120px] md:px-[40px] px-[20px] py-[31px]"

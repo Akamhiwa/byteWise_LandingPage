@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 import BigHeadingAnimate from "../TextUi/BigHeadingAnimate"
 const CTA = () => {
   const { mousePosition, controls, handleMouseMove, handleMouseEnter, handleMouseLeave } = useMouseEffect();
-  const variants = useScrollAnimationVariants(0, 80, 0.5);
+  const variants = useScrollAnimationVariants(0, 80, 0.6);
   return (
     <div className="w-full lg:py-[200px] flex items-center justify-center py-[100px] ">
       <motion.div className="w-full relative inline-block p-[1px] rounded-[16px] bg-gradient-to-b from-[rgba(244,244,245,0.4)] 

@@ -7,9 +7,9 @@ import { motion } from "framer-motion"
 import useScrollAnimationVariants from "../../Hooks/useScrollAnimationVariants"
 import BigHeadingAnimate from "../TextUi/BigHeadingAnimate"
 const Heading = () => {
-  const variants = useScrollAnimationVariants(0, 80, 0.5);
+  const variants = useScrollAnimationVariants(0, 80, 0.6);
   return (
-    <motion.div className="md:w-[900px] w-full lg:w-[1018px] text-center mt-[147px] pb-6 "
+    <motion.div className=" w-full xl:w-[1018px] text-center mt-[147px] pb-6 "
     initial="hidden"
     whileInView="visible"
     viewport={{ once: false }}

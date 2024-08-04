@@ -17,7 +17,7 @@ const StatsContainer = () => {
       {statsData.map((row, rowIndex) => (
         <div 
         key={rowIndex} 
-        className={`flex items-center   z-10  lg:gap-x-[22px] w-full  ${row.length === 1 ? 'justify-center ' : 'justify-between  '}  
+        className={`flex items-center z-10 lg:gap-x-[22px] w-full  ${row.length === 1 ? 'justify-center ' : 'justify-between  '}  
          ${rowIndex===0 && 'lg:pl-[200px] pl-[100px]' }
          ${rowIndex===2 && 'lg:pr-[200px] pr-[100px]' } `}>
           

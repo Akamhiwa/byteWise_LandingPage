@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import useScrollAnimationVariants from "../../Hooks/useScrollAnimationVariants";
 const Service = ({service}) => { 
   const { mousePosition, controls, handleMouseMove, handleMouseEnter, handleMouseLeave } = useMouseEffect();
-  const variants = useScrollAnimationVariants(80, 0, 0.5);
+  const variants = useScrollAnimationVariants(80, 0, 0.6);
   return (
     <motion.div 
       className={`relative inline-block p-[1px] ${service.isSpan ? 'col-span-2':'col-span-1'} rounded-[16px] bg-gradient-to-b

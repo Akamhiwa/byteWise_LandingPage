@@ -7,7 +7,7 @@ import Paragraph from '../TextUi/Paragraph'
 import useScrollAnimationVariants from '../../Hooks/useScrollAnimationVariants';
 const Stats = ({stats}) => {
     const { mousePosition, controls, handleMouseMove, handleMouseEnter, handleMouseLeave } = useMouseEffect();
-    const variants = useScrollAnimationVariants(-80, 0, 0.5);
+    const variants = useScrollAnimationVariants(-80, 0, 0.6);
   return (
     <motion.div 
     initial="hidden"

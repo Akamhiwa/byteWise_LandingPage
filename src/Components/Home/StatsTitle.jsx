@@ -5,7 +5,7 @@ import SmallHeading from "../TextUi/SmallHeading"
 import { motion } from "framer-motion";
 /* eslint-disable react/no-unescaped-entities */
 const StatsTitle = () => {
-  const variants = useScrollAnimationVariants(120, 0, 0.5);
+  const variants = useScrollAnimationVariants(120, 0, 0.6);
 
   return (
     <motion.div  

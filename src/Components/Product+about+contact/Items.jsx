@@ -8,7 +8,7 @@ const   Items = ({ item }) => {
 
   return (
     <motion.div 
-        className="xl:h-[600px] md:h-[300px]  h-[200px] rounded-[16px] relative w-full"  
+        className="xl:h-[600px] md:h-[300px]  h-[200px]  grayscale rounded-[16px] relative w-full"  
         style={{backgroundImage: `url(${item.image})`}}
          initial="hidden"
          whileInView="visible"
