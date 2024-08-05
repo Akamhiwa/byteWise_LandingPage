@@ -4,7 +4,7 @@ import PageTitle from "../Components/Product+about+contact/PageTitle"
 import ProductContainer from '../Components/Product+about+contact/ProductContainer'
 const Product = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Imagebg img='../../../public/images/bytewise.png' isBlur={true}>
         <PageTitle page="Products" /> 
       </Imagebg>

@@ -12,7 +12,7 @@ import SectionTitle from "../Components/sectionTitle/SectionTitle"
 
 const Home = () => {
   return (
-    <div className=" text-center overflow-hidden  2xl:px-[220px] xl:px-[180px] lg:px-[100px] md:px-[30px] px-[20px]  ">
+    <div className=" text-center overflow-hidden 2xl:px-[220px] xl:px-[180px] lg:px-[100px] md:px-[30px] px-[20px]  ">
       <div className="flex flex-col items-center justify-center">
       <Heading />
       <HeadingImage />

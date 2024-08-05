@@ -20,7 +20,7 @@ const About = () => {
         <PageTitle page="About US" /> 
       </Imagebg>
 
-      <div className=" 2xl:px-[220px] xl:px-[180px] lg:px-[100px] md:px-[30px] px-[20px] lg:py-16 py-4">
+      <div className="overflow-hidden 2xl:px-[220px] xl:px-[180px] lg:px-[100px] md:px-[30px] px-[20px] lg:py-16 py-4">
 
           <CompanyOverview imgUrl={AboutusImage} flexDirection="lg:flex-row" >
               <>

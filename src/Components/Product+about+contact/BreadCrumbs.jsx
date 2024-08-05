@@ -10,7 +10,7 @@ const BreadCrumbs = () => {
     const isLast = index === pathnames.length - 1;
 
     return isLast ? (
-        <span key={to} className="lg:text-[24px] md:text-[20px] text-[18px] font-semibold z-20 uppercase leading-snug tracking-wide w-full">{value.charAt(0).toUpperCase() + value.slice(1)}</span>
+        <span key={to} className="lg:text-[24px] md:text-[20px] text-[18px] font-semibold z-20 uppercase leading-snug tracking-wide w-   ">{value.charAt(0).toUpperCase() + value.slice(1)}</span>
     ) : ( 
         <Link key={to} className="lg:text-[24px] md:text-[20px] text-[18px] font-semibold z-20 uppercase leading-snug tracking-wide w-full">
           {value.charAt(0).toUpperCase() + value.slice(1)}
@@ -19,8 +19,8 @@ const BreadCrumbs = () => {
   });
 
   return (
-    <div className="z-10 flex items-center justify-center gap-2 italic">   
-            <Link to="/" className="lg:text-[24px] hover:text-Primary md:text-[20px] text-[18px] font-semibold z-20 uppercase leading-snug tracking-wide w-full">Home</Link>
+    <div className="z-10 flex items-center  gap-2 italic ">   
+            <Link to="/" className="lg:text-[24px] hover:text-Primary md:text-[20px] text-[18px] font-light z-20 uppercase leading-snug tracking-wide ">Home</Link>
             <SubTitle>/</SubTitle>
           {breadcrumbItems}
     </div>

@@ -17,7 +17,7 @@ const Team = ({team}) => {
 
              <MouseEffectShape controls={controls} mousePosition={mousePosition} />
              <img src={team.image} alt="" className="lg:h-[93px] lg:w-[93px] w-[75px] h-[75px] rounded-full grayscale"/>
-             <div className="flex items-center justify-center flex-col gap-[8px] text-left">
+             <div className="flex flex-col gap-[8px] text-left">
                 <SubTitle>{team.name}</SubTitle>
                 <Paragraph>{team.workSpace}</Paragraph>
 
