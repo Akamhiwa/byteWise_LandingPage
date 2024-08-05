@@ -1,5 +1,5 @@
 import Footer from "../Components/Footer/Footer"
-import Imagebg from "../Components/ImageBackground/Imagebg"
+import Imagebg from "../Components/Product+about+contact/Imagebg"
 import PageTitle from "../Components/Product+about+contact/PageTitle"
 import ProductContainer from '../Components/Product+about+contact/ProductContainer'
 const Product = () => {
