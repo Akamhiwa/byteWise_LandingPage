@@ -1,9 +1,17 @@
+import { useEffect } from "react"
 import Footer from "../Components/Footer/Footer"
 import ContactUsTextSection from "../Components/Product+about+contact/ContactUsTextSection"
 import FaqSection from "../Components/Product+about+contact/FaqSection"
 import Form from "../Components/Product+about+contact/Form"
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }, []);
   return (
     <div className=" flex items-center justify-center flex-col overflow-visible 2xl:mt-[186px] mt-[130px] 
      2xl:px-[220px] xl:px-[180px] lg:px-[100px] md:px-[30px] px-[20px] ">

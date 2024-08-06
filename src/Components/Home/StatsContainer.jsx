@@ -1,15 +1,12 @@
 import Stats from "./Stats";
-
 /* eslint-disable react/prop-types */
 const StatsContainer = () => {
  
-   const statsData = [
-    [{ value: '500,000+', label: 'Satisfied Customers' }],
-    [
-      { value: '1,000,000+', label: 'Products Sold' },
-      { value: '99%', label: 'Customer Satisfaction' }
-    ],
-    [{ value: '10,000+', label: 'Total Users' }]
+    const statsData = [
+   [ { value: { start: 400000, end: 500000 }, operator: '+', label: 'Satisfied Customers' }],
+   [ { value: { start: 800000, end: 1000000 }, operator: '+', label: 'Products Sold' },
+    { value: { start: 25, end: 99 }, operator: '%', label: 'Customer Satisfaction' }],
+   [ { value: { start: 8500, end: 10000 }, operator: '+', label: 'Total Users' }]
   ];
   
   return (

@@ -13,7 +13,16 @@ import SectionTitle from "../Components/sectionTitle/SectionTitle"
 import Partners from "../Components/Home/Partners"
 import CTA from "../Components/CTA/CTA"
 import TeamsContainer from "../Components/Product+about+contact/TeamsContainer"
+import { useEffect } from "react"
 const About = () => {
+  
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }, []);
   return (
     <div className="text-center">
       <Imagebg img='../../../public/images/bytewise.png' isBlur={false}>

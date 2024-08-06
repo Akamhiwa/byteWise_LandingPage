@@ -5,9 +5,15 @@ import MediumHeading from '../TextUi/MediumHeading';
 import { motion } from 'framer-motion';
 import Paragraph from '../TextUi/Paragraph'
 import useScrollAnimationVariants from '../../Hooks/useScrollAnimationVariants';
+import CountUp from 'react-countup';
+import { useState } from 'react';
+import ScrollTrigger from 'react-scroll-trigger';
 const Stats = ({stats}) => {
+  const [counterOn,setCounterOn]=useState(false)
+  
+  const { value, operator, label } = stats;
     const { mousePosition, controls, handleMouseMove, handleMouseEnter, handleMouseLeave } = useMouseEffect();
-    const variants = useScrollAnimationVariants(-80, 0, 0.6);
+    const variants = useScrollAnimationVariants(-80, 0, 0.8);
   return (
     <motion.div 
     initial="hidden"
@@ -23,8 +29,14 @@ const Stats = ({stats}) => {
         onMouseEnter={handleMouseEnter} 
         onMouseLeave={handleMouseLeave}>
             <MouseEffectShape controls={controls} mousePosition={mousePosition} />
-            <MediumHeading>{stats.value}</MediumHeading>
-            <Paragraph>{stats.label}</Paragraph>
+            <ScrollTrigger onEnter={()=>setCounterOn(true)} onExit={()=>setCounterOn(false)}>
+            <span className='flex'>
+              {counterOn &&<MediumHeading> <CountUp start={value.start} end={value.end} duration={4} separator="," className=""  /></MediumHeading>
+            }
+               <MediumHeading>{operator}</MediumHeading>
+            </span>
+            </ScrollTrigger>
+            <Paragraph>{label}</Paragraph>
         </div>
     </motion.div>
    

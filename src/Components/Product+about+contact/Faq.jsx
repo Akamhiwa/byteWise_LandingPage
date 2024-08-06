@@ -9,7 +9,7 @@ const Faq = ({faq,isOpen,onClick}) => {
   return (
     <AnimatePresence>
     <motion.div 
-        className={`relative inline-block p-[1px]   rounded-[16px] bg-gradient-to-b from-[rgba(244,244,245,0.4)] to-[rgba(142,142,143,0)]`} 
+        className={`relative inline-block p-[1px]  rounded-[16px] bg-gradient-to-b from-[rgba(244,244,245,0.4)] to-[rgba(142,142,143,0)]`} 
         onClick={onClick}
         whileInView="visible"
         initial={{opacity:0, height: "83px" }}
@@ -25,7 +25,7 @@ const Faq = ({faq,isOpen,onClick}) => {
               className={`bg-GradientBG rounded-[16px] px-[32px] py-[26px]  flex flex-col  gap-[12px]   cursor-pointer`}
               initial={{ height: "83px" }}
               animate={{ height: isOpen ? "auto" : "83px" }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.2 }}
               exit={{height:"83px"}}
                >
                     <div className="flex justify-between items-center">

@@ -6,7 +6,7 @@ import useMouseEffect from "../../Hooks/useMouseEffect"
 import MouseEffectShape from "../Shapes/MouseEffectShape"
 import useScrollAnimationVariants from "../../Hooks/useScrollAnimationVariants"
 import { motion } from "framer-motion"
-import BigHeadingAnimate from "../TextUi/BigHeadingAnimate"
+import BigHeading from "../TextUi/BigHeading"
 const CTA = () => {
   const { mousePosition, controls, handleMouseMove, handleMouseEnter, handleMouseLeave } = useMouseEffect();
   const variants = useScrollAnimationVariants(0, 80, 0.6);
@@ -29,7 +29,7 @@ const CTA = () => {
         <BlurShape />
         <div className="w-full flex items-center justify-center h-full flex-col lg:gap-[48px] gap-[28px] z-10">
           <div className="flex flex-col lg:gap-[24px] gap-[14px] z-10 2xl:w-[65%] md:w-[85%] w-[100%]">
-            <BigHeadingAnimate>Have a Question or Need Assistance?</BigHeadingAnimate>
+            <BigHeading>Have a Question or Need Assistance?</BigHeading>
             <Paragraph>Reach out to our team for expert advice, product inquiries, or any assistance you need. We're here to help!</Paragraph>
            </div>
             <PrimaryBtn UrlPage="/Contact" >Contact us</PrimaryBtn>     
