@@ -5,9 +5,10 @@ import PageTitle from "../Components/Product+about+contact/PageTitle"
 import Footer from "../Components/Footer/Footer"
 import MediumHeading from "../Components/TextUi/MediumHeading"
 import Paragraph from "../Components/TextUi/Paragraph"
-import AboutusImage from '../../public/images/first.png'
-import Vision from '../../public/images/second.png'
-import Mision from '../../public/images/third.png'
+import AboutusImage from '../assets/images/first.png'
+import Vision from '../assets/images/second.png'
+import Mision from '../assets/images/third.png'
+import bytewise from '../assets/images/bytewise.png'
 import CompanyOverview from "../Components/Product+about+contact/CompanyOverview"
 import SectionTitle from "../Components/sectionTitle/SectionTitle"
 import Partners from "../Components/Home/Partners"
@@ -16,7 +17,7 @@ import TeamsContainer from "../Components/Product+about+contact/TeamsContainer"
 const About = () => {
   return (
     <div className="text-center">
-      <Imagebg img='../../../public/images/bytewise.png' isBlur={false}>
+      <Imagebg img={bytewise} isBlur={false}>
         <PageTitle page="About US" /> 
       </Imagebg>
 

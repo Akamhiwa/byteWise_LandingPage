@@ -1,5 +1,5 @@
 import Items from './Items'
-import pr1 from '../../../public/images/team.png'
+import pr1 from '../../assets/images/team.png'
 const ProductContainer = () => {
   const data=[
     {

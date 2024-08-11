@@ -1,6 +1,6 @@
 import TestimonialSliderNegativeX from "./TestimonialSliderNegativeX"
 import TestimonialSliderPositiveX from "./TestimonialSliderPositiveX"
-import testimonialImg from '../../../public/images/ProfileImage.jpg'
+import testimonialImg from '../../assets/images/ProfileImage.jpg'
 const TestimonialContainer = () => {
     const TestimonialDataPositiveX=[
         {

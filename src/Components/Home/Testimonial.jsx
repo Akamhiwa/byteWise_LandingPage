@@ -20,16 +20,16 @@ const Testimonial = ({testimonial}) => {
             <div className="flex gap-[24px] lg:items-start items-center  lg:justify-start">
                 <span className="h-[65px] w-[65px] z-10  bg-center rounded-full bg-cover grayscale"    
                 style={{ 
-                backgroundImage: `url(${testimonial.imagePath})`,
+                backgroundImage: `url(${testimonial?.imagePath})`,
               }}> </span>
                 <div className="flex flex-col  ">
-                    <SubTitle isSemibold={true}>{testimonial.name}</SubTitle>
-                    <Paragraph>{testimonial.Position}</Paragraph>
+                    <SubTitle isSemibold={true}>{testimonial?.name}</SubTitle>
+                    <Paragraph>{testimonial?.Position}</Paragraph>
 
                 </div>
             </div>
 
-               <Paragraph >{testimonial.Qoute}</Paragraph>
+               <Paragraph >{testimonial?.Qoute}</Paragraph>
             
 
         </div>

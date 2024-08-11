@@ -1,6 +1,6 @@
 import TeamsPositiveSlider from "./TeamsPositiveSlider"
 import TeamsNegativeSlider from "./TeamsNegativeSlider"
-import team1 from '../../../public/images/ProfileImage.jpg'
+import team1 from '../../assets/images/ProfileImage.jpg'
 const TeamsContainer = () => {
     const Team1=[
         {
