@@ -1,51 +1,52 @@
 import Items from './Items'
+import pr1 from '../../../public/images/team.png'
 const ProductContainer = () => {
   const data=[
     {
-      image:"../../../public/images/team.png",
+      image:pr1,
       name:"MAC"},
     {
-      image:"../../../public/images/team.png",
+      image:pr1,
       name:"MAC"
     },
     {
-      image:"../../../public/images/team.png",
+      image:pr1,
       name:"MAC"
     },
     {
-      image:"../../../public/images/team.png",
+      image:pr1,
       name:"MAC"
     },
     {
-      image:"../../../public/images/team.png",
+      image:pr1,
       name:"MAC"
     },
     {
-      image:"../../../public/images/team.png",
+      image:pr1,
       name:"MAC"
     },
     {
-      image:"../../../public/images/team.png",
+      image:pr1,
       name:"MAC"
     },
     {
-      image:"../../../public/images/team.png",
+      image:pr1,
       name:"MAC"
     },
     {
-      image:"../../../public/images/team.png",
+      image:pr1,
       name:"MAC"
     },
     {
-      image:"../../../public/images/team.png",
+      image:pr1,
       name:"MAC"
     },  
     {
-      image:"../../../public/images/team.png",
+      image:pr1,
       name:"MAC"
     },
     {
-      image:"../../../public/images/team.png",
+      image:pr1,
       name:"MAC"
     },
   ]

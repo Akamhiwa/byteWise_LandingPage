@@ -1,71 +1,71 @@
 import TeamsPositiveSlider from "./TeamsPositiveSlider"
 import TeamsNegativeSlider from "./TeamsNegativeSlider"
-
+import team1 from '../../../public/images/ProfileImage.jpg'
 const TeamsContainer = () => {
     const Team1=[
         {
             name:"Username",
             workSpace:"workspace name",
-            image:"../../public/images/ProfileImage.jpg"
+            image:team1
         },
         {
             name:"Username",
             workSpace:"workspace name",
-            image:"../../public/images/ProfileImage.jpg"
+            image:team1
         },
         {
             name:"Username",
             workSpace:"workspace name",
-            image:"../../public/images/ProfileImage.jpg"
+            image:team1
         },
         {
             name:"Username",
             workSpace:"workspace name",
-            image:"../../public/images/ProfileImage.jpg"
+            image:team1
         },
     ]
     const Team2=[
         {
             name:"Username",
             workSpace:"workspace name",
-            image:"../../public/images/ProfileImage.jpg"
+            image:team1
         },
         {
             name:"Username",
             workSpace:"workspace name",
-            image:"../../public/images/ProfileImage.jpg"
+            image:team1
         },
         {
             name:"Username",
             workSpace:"workspace name",
-            image:"../../public/images/ProfileImage.jpg"
+            image:team1
         },
         {
             name:"Username",
             workSpace:"workspace name",
-            image:"../../public/images/ProfileImage.jpg"
+            image:team1
         }, 
     ]
     const Team3=[
         {
             name:"Username",
             workSpace:"workspace name",
-            image:"../../public/images/ProfileImage.jpg"
+            image:team1
         },
         {
             name:"Username",
             workSpace:"workspace name",
-            image:"../../public/images/ProfileImage.jpg"
+            image:team1
         },
         {
             name:"Username",
             workSpace:"workspace name",
-            image:"../../public/images/ProfileImage.jpg"
+            image:team1
         },
         {
             name:"Username",
             workSpace:"workspace name",
-            image:"../../public/images/ProfileImage.jpg"
+            image:team1
         },
     ]
   return (

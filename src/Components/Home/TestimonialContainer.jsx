@@ -1,43 +1,44 @@
 import TestimonialSliderNegativeX from "./TestimonialSliderNegativeX"
 import TestimonialSliderPositiveX from "./TestimonialSliderPositiveX"
+import testimonialImg from '../../../public/images/ProfileImage.jpg'
 const TestimonialContainer = () => {
     const TestimonialDataPositiveX=[
         {
             name:"john doe",
             Position:"Assistant Manager",
             Qoute:"Hear what our customers have to say about their Bytewise experience. Our commitment to quality products and exceptional service has earned us glowing reviews from satisfied customers.",
-            imagePath:"../../../public/images/ProfileImage.jpg"
+            imagePath:testimonialImg
         },
         {
             name:"john doe",
             Position:"Assistant Manager",
             Qoute:"Hear what our customers have to say about their Bytewise experience. Our commitment to quality products and exceptional service has earned us glowing reviews from satisfied customers.",
-             imagePath:"../../../public/images/ProfileImage.jpg"
+             imagePath:testimonialImg
 
         },
         {
             name:"john doe",
             Position:"Assistant Manager",
             Qoute:"Hear what our customers have to say about their Bytewise experience. Our commitment to quality products and exceptional service has earned us glowing reviews from satisfied customers.",
-            imagePath:"../../../public/images/ProfileImage.jpg"
+            imagePath:testimonialImg
         },
         {
             name:"john doe",
             Position:"Assistant Manager",
             Qoute:"Hear what our customers have to say about their Bytewise experience. Our commitment to quality products and exceptional service has earned us glowing reviews from satisfied customers.",
-             imagePath:"../../../public/images/ProfileImage.jpg"
+             imagePath:testimonialImg
 
         }, {
             name:"john doe",
             Position:"Assistant Manager",
             Qoute:"Hear what our customers have to say about their Bytewise experience. Our commitment to quality products and exceptional service has earned us glowing reviews from satisfied customers.",
-            imagePath:"../../../public/images/ProfileImage.jpg"
+            imagePath:testimonialImg
         },
         {
             name:"john doe",
             Position:"Assistant Manager",
             Qoute:"Hear what our customers have to say about their Bytewise experience. Our commitment to quality products and exceptional service has earned us glowing reviews from satisfied customers.",
-             imagePath:"../../../public/images/ProfileImage.jpg"
+             imagePath:testimonialImg
 
         },
        
@@ -47,38 +48,37 @@ const TestimonialContainer = () => {
             name:"john doe",
             Position:"Assistant Manager",
             Qoute:"Hear what our customers have to say about their Bytewise experience. Our commitment to quality products and exceptional service has earned us glowing reviews from satisfied customers.",
-            imagePath:"../../../public/images/ProfileImage.jpg"
+            imagePath:testimonialImg
         },
         {
             name:"john doe",
             Position:"Assistant Manager",
             Qoute:"Hear what our customers have to say about their Bytewise experience. Our commitment to quality products and exceptional service has earned us glowing reviews from satisfied customers.",
-             imagePath:"../../../public/images/ProfileImage.jpg"
+             imagePath:testimonialImg
 
         },
         {
             name:"john doe",
             Position:"Assistant Manager",
             Qoute:"Hear what our customers have to say about their Bytewise experience. Our commitment to quality products and exceptional service has earned us glowing reviews from satisfied customers.",
-            imagePath:"../../../public/images/ProfileImage.jpg"
+            imagePath:testimonialImg
         },
         {
             name:"john doe",
             Position:"Assistant Manager",
             Qoute:"Hear what our customers have to say about their Bytewise experience. Our commitment to quality products and exceptional service has earned us glowing reviews from satisfied customers.",
-             imagePath:"../../../public/images/ProfileImage.jpg"
-
+             imagePath:testimonialImg
         }, {
             name:"john doe",
             Position:"Assistant Manager",
             Qoute:"Hear what our customers have to say about their Bytewise experience. Our commitment to quality products and exceptional service has earned us glowing reviews from satisfied customers.",
-            imagePath:"../../../public/images/ProfileImage.jpg"
+            imagePath:testimonialImg
         },
         {
             name:"john doe",
             Position:"Assistant Manager",
             Qoute:"Hear what our customers have to say about their Bytewise experience. Our commitment to quality products and exceptional service has earned us glowing reviews from satisfied customers.",
-             imagePath:"../../../public/images/ProfileImage.jpg"
+             imagePath:testimonialImg
 
         },
     ]
