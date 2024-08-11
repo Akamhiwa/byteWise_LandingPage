@@ -6,7 +6,7 @@ import useScrollAnimationVariants from "../../Hooks/useScrollAnimationVariants";
 const PageTitle = ({page}) => {
   const variants = useScrollAnimationVariants(0, 20, 0.8);
   return (
-    <motion.div className="flex items-center flex-col justify-center lg:h-[500px] h-[300px] lg:pt-0 pt-[46px] gap-[6px] z-40"
+    <motion.div className="absolute inset-0 flex  flex-col justify-center items-center   lg:pt-0 pt-[46px] gap-[6px] z-10"
        initial="hidden"
        whileInView="visible"
        viewport={{ once: false }}

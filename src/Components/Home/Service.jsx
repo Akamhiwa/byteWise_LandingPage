@@ -35,7 +35,7 @@ const Service = ({service}) => {
             </span>
             <div className="flex flex-col  w-[100%] gap-[4px]  ">
               <span className={`${service.isSpan ? 'w-[100%]':'w-[80%]'} z-10`}>
-                <SubTitle>{service.ServiceTItle}</SubTitle>
+                <SubTitle isSemibold={true}>{service.ServiceTItle}</SubTitle>
               </span>
                 <span className={`${service.isSpan ? 'lg:w-[60%]':'lg:w-[90%]'} z-10 w-full`}>
                 <Paragraph>{service.ServiceDetail}</Paragraph>

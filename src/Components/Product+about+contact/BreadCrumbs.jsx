@@ -21,7 +21,7 @@ const BreadCrumbs = () => {
   return (
     <div className="z-10 flex items-center  gap-2 italic ">   
             <Link to="/" className="lg:text-[24px] hover:text-Primary md:text-[20px] text-[18px] font-light z-20 uppercase leading-snug tracking-wide ">Home</Link>
-            <SubTitle>/</SubTitle>
+            <SubTitle isSemibold={false}>/</SubTitle>
           {breadcrumbItems}
     </div>
   );

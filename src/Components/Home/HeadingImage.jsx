@@ -31,7 +31,7 @@ const HeadingImage = () => {
               style={{ 
             backgroundImage: `url(${images[ActiveImage-1]})`,   
           }}>
-             <div className='flex items-center justify-center gap-[12px] absolute lg:top-[62px] lg:right-[62px] right-[12px] top-[32px] z-10'>
+             <div className='flex items-center justify-center z-10 gap-[12px] absolute lg:top-[62px] lg:right-[62px] right-[12px] top-[32px] '>
                 <SliderBtn handleClick={handleDecrement}>
                     <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" >
                         <path fill="currentColor" d="M15.41 7.41L14 6l-6 6l6 6l1.41-1.41L10.83 12z"></path>

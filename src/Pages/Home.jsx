@@ -9,16 +9,7 @@ import StatsContainer from "../Components/Home/StatsContainer"
 import StatsTitle from "../Components/Home/StatsTitle"
 import TestimonialContainer from "../Components/Home/TestimonialContainer"
 import SectionTitle from "../Components/sectionTitle/SectionTitle"
-import { useEffect } from "react"
-
 const Home = () => {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
-  }, []);
   return (
     <div className=" text-center overflow-hidden 2xl:px-[220px] xl:px-[180px] lg:px-[100px] md:px-[30px] px-[20px]  ">
       <div className="flex flex-col items-center justify-center">

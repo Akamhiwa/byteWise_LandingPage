@@ -8,7 +8,7 @@ const SliderBtn = ({handleClick,children}) => {
     whileHover="hover"
     whileTap="tap"
     variants={buttonVariants}
-   className='h-[60px] w-[60px] flex items-center justify-center  bg-Primary rounded-full'
+   className='h-[60px] w-[60px] flex items-center justify-center z-10  bg-Primary rounded-full'
    onClick={handleClick}
    >
     {children}

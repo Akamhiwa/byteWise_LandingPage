@@ -6,6 +6,7 @@ import SecondaryBtn from "../Buttons/SecondaryBtn"
 import { motion } from "framer-motion"
 import useScrollAnimationVariants from "../../Hooks/useScrollAnimationVariants"
 import BigHeadingAnimate from "../TextUi/BigHeadingAnimate"
+import SubTitle from "../TextUi/SubTitle"
 const Heading = () => {
   const variants = useScrollAnimationVariants(0, 80, 0.6);
   return (
@@ -17,7 +18,7 @@ const Heading = () => {
     >
       <div className="flex flex-col lg:gap-[32px] gap-[26px]  ">
             <div className="flex flex-col lg:gap-[12px] gap-[6px] "> 
-                <span className="text-[24px] uppercase tracking-widest">Bytewise</span>
+                <SubTitle isSemibold={false}>Bytewise</SubTitle>
 
                   <div className="flex flex-col lg:gap-[24px] gap-[18px] ">
                        <BigHeadingAnimate>Unleashing the Power of Technology</BigHeadingAnimate>

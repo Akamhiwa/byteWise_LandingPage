@@ -11,7 +11,7 @@ const SecondaryBtn = ({UrlPage,children}) => {
     whileHover="hover"
     whileTap="tap"
     variants={buttonVariants}
-    className='relative  h-full  lg:py-[14px]  py-[12px] px-[1px]  rounded-[16px] bg-gradient-to-b from-[rgba(244,244,245,0.4)] to-[rgba(142,142,143,0)]  '
+    className='relative  h-full z-10  lg:py-[14px]  py-[12px] px-[1px]  rounded-[16px] bg-gradient-to-b from-[rgba(244,244,245,0.4)] to-[rgba(142,142,143,0)]  '
   >
     <NavLink
       to={UrlPage}

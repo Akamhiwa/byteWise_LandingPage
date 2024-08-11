@@ -23,7 +23,7 @@ const Testimonial = ({testimonial}) => {
                 backgroundImage: `url(${testimonial.imagePath})`,
               }}> </span>
                 <div className="flex flex-col  ">
-                    <SubTitle>{testimonial.name}</SubTitle>
+                    <SubTitle isSemibold={true}>{testimonial.name}</SubTitle>
                     <Paragraph>{testimonial.Position}</Paragraph>
 
                 </div>
