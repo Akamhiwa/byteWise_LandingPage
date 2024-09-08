@@ -9,7 +9,7 @@ const Faq = ({faq,isOpen,onClick}) => {
   return (
     <AnimatePresence>
     <motion.div 
-        className={`relative inline-block p-[1px]  rounded-[16px] bg-gradient-to-b ${isOpen ? "h-auto":'lg:h-[83px]'} from-[rgba(244,244,245,0.4)] to-[rgba(142,142,143,0)]`} 
+        className={`relative inline-block p-[1px]  rounded-[16px] bg-gradient-to-b ${isOpen ? "h-auto":'lg:h-[83px] h-auto'} from-[rgba(244,244,245,0.4)] to-[rgba(142,142,143,0)]`} 
         onClick={onClick}
         whileInView="visible"
         initial="hidden"
@@ -20,7 +20,7 @@ const Faq = ({faq,isOpen,onClick}) => {
         >
         
             <motion.div 
-              className={`bg-GradientBG rounded-[16px] lg:px-[32px]  px-[16px] lg:py-[26px] py-[16px] ${isOpen ? "h-auto":'lg:h-[83px]'} flex flex-col  gap-[12px]   cursor-pointer`}
+              className={`bg-GradientBG rounded-[16px] lg:px-[32px]  px-[16px] lg:py-[26px] py-[18px] ${isOpen ? "h-auto":'lg:h-[83px] h-auto'} flex flex-col  gap-[12px]   cursor-pointer`}
                >
                     <div className="flex justify-between items-center">  
                             <Paragraph isSemiBold={true}>{faq.question}</Paragraph>
@@ -31,6 +31,7 @@ const Faq = ({faq,isOpen,onClick}) => {
                         </motion.div>
                     </div>
                     {isOpen &&(
+                      <AnimatePresence>
                          <motion.div 
                            initial={{ opacity: 0 }}
                            animate={{ opacity: 1 }}
@@ -38,6 +39,7 @@ const Faq = ({faq,isOpen,onClick}) => {
                            transition={{ duration: 0.3 }}>
                               <Paragraph>{faq.response}</Paragraph>
                          </motion.div>
+                      </AnimatePresence>
                     )
                     }
             </motion.div>

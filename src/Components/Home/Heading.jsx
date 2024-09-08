@@ -1,5 +1,4 @@
 // import { motion } from "framer-motion"
-
 import Paragraph from "../TextUi/Paragraph"
 import PrimaryBtn from "../Buttons/PrimaryBtn"
 import SecondaryBtn from "../Buttons/SecondaryBtn"
@@ -10,7 +9,8 @@ import SubTitle from "../TextUi/SubTitle"
 const Heading = () => {
   const variants = useScrollAnimationVariants(0, 80, 0.6);
   return (
-    <motion.div className=" w-full xl:w-[1018px] text-center mt-[147px] pb-6 "
+    <motion.div className=" w-full xl:w-[1018px] text-center  mt-[147px] lg:pb-6 "
+    
     initial="hidden"
     whileInView="visible"
     viewport={{ once: false }}

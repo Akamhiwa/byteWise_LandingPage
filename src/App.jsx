@@ -12,10 +12,8 @@ const App = () => {
 
   useEffect(() => {
     if (isInitialMount.current) {
-      // Skip scrolling on the first mount (initial load)
       isInitialMount.current = false;
     } else {
-      // Scroll to top only on route change
       window.scrollTo({
         top: 0,
         left: 0,
