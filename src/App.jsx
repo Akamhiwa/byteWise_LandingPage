@@ -23,12 +23,11 @@ const App = () => {
   }, [location.pathname]);
   return (
     <div className="text-textColor font-Primary_Font  overflow-hidden relative ">
-     
       <Nav />
       <BlurShape />
       <div>
         <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" index element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Product" element={<Product />} />

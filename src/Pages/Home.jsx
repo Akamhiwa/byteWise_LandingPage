@@ -10,13 +10,18 @@ import StatsTitle from "../Components/Home/StatsTitle"
 import TestimonialContainer from "../Components/Home/TestimonialContainer"
 import SectionTitle from "../Components/sectionTitle/SectionTitle"
 import Lines from '../assets/images/Vector.png'
+import { motion } from "framer-motion" 
 const Home = () => {
   return (
     <div className=" text-center  overflow-hidden 2xl:px-[220px] xl:px-[180px] lg:px-[100px] md:px-[30px] px-[20px]  ">
-      <div className="bg-center  lg:h-screen  h-[600px] absolute top-0 left-0 right-0 -z-10 opacity-80" style={{ 
+      <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, }}
+      transition={{duration:1.5,delay:0.2}}
+      className="bg-center  lg:h-screen  h-[600px] absolute top-0 left-0 right-0 -z-10 opacity-80" 
+      style={{ 
       backgroundImage: `url(${Lines})`,   
-    }}>
-      </div>
+    }}></motion.div>
       <div className="flex flex-col items-center justify-center ">
       <Heading />
       <HeadingImage />
