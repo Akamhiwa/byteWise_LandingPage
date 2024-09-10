@@ -73,7 +73,7 @@ const Nav = () => {
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ type: "spring", stiffness: 50, damping: 20 }}
+            transition={{ type: "spring", stiffness: 60, damping: 20,duration:300 }}
           >
             <span
               className="absolute top-9 right-9 hover:bg-[#363C49] py-3 px-3 rounded-[16px] cursor-pointer"
