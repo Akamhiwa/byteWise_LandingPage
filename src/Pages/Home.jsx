@@ -26,7 +26,7 @@ const Home = () => {
       <Heading />
       <HeadingImage />
       <Partners />
-       
+         
       <SectionTitle  title="Services" padding="lg:pt-[137px] pt-[70px]" />
       <ServicesContainer />
       

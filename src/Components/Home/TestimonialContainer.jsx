@@ -86,7 +86,6 @@ const TestimonialContainer = () => {
     <div className="lg:pt-[81px] pt-[44px] ">
         <div className="flex flex-col lg:gap-[32px] gap-[22px]">
                 <TestimonialSliderPositiveX testimonial={TestimonialDataPositiveX}/>
-
                 <TestimonialSliderNegativeX testimonial={TestimonialDataNegativeX} />
         </div>
        

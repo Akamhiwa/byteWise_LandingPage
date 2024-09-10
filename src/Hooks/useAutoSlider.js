@@ -2,7 +2,7 @@ import { animate, useMotionValue } from "framer-motion";
 import { useEffect, useState } from "react";
 import useMeasure from "react-use-measure";
 
-const useAutoSlider = (fastDuration = 23, slowDuration = 37, finalPositionCalculation) => {
+const useAutoSlider = (fastDuration,slowDuration,finalPositionCalculation) => {
   const [ref, { width }] = useMeasure();
   const Xtranslation = useMotionValue(0);
   const [duration, setDuration] = useState(fastDuration);
