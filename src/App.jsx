@@ -1,4 +1,4 @@
-import { Route,Routes, useLocation } from "react-router-dom"
+import { Navigate, Route,Routes, useLocation } from "react-router-dom"
 import Home from "./Pages/Home"
 import Product from "./Pages/Product"
 import About from "./Pages/About"
@@ -27,7 +27,7 @@ const App = () => {
       <BlurShape />
       <div>
         <Routes>
-        <Route path="/" index element={<Home />} />
+        <Route  index element={<Navigate replace to="home" />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Product" element={<Product />} />
