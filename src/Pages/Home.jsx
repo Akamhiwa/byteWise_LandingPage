@@ -9,6 +9,7 @@ import StatsContainer from "../Components/Home/StatsContainer"
 import StatsTitle from "../Components/Home/StatsTitle"
 import TestimonialContainer from "../Components/Home/TestimonialContainer"
 import SectionTitle from "../Components/sectionTitle/SectionTitle"
+// import GridBg from "../Components/Home/GridBg"
 import Lines from '../assets/images/Vector.png'
 import { motion } from "framer-motion" 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
       style={{ 
       backgroundImage: `url(${Lines})`,   
     }}></motion.div>
+    {/* <GridBg /> */}
       <div className="flex flex-col items-center justify-center ">
       <Heading />
       <HeadingImage />
